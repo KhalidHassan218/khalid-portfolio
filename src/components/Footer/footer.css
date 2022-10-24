@@ -1,0 +1,55 @@
+.footer{
+border-top:2px solid #000 ;
+text-transform: capitalize;
+}
+.footer .media{
+    font-size: 20px;
+    flex-basis: 35%;
+}
+.footer .media .footer-icon:hover{
+    color: rgb(244, 5, 5);
+    cursor: pointer;
+}
+.footer .important{
+    font-size: 20px;
+    flex-basis: 35%;
+    margin: 0;
+}
+.footer .important p{
+   text-decoration: underline;
+    margin: 0;
+    cursor: pointer;
+    
+}
+.footer .important p:hover{
+color: rgb(21, 8, 87);
+    
+}
+.footer h1{
+    flex-basis: 20%;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media (max-width:992px) {
+
+    .footer .media .footer-icon {
+            margin-left: 10px;
+        }
+}
+
+
+#mouse{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border: 4px solid blue;
+    border-radius: 50%;
+    mix-blend-mode: difference;
+    pointer-events: none;
+    z-index: 2000;
+    display: none;
+    transition: top 0.0025s ease,left 0.025s ease, transform 0.25s ease;
+}

@@ -1,0 +1,200 @@
+/* .home-full-width{
+background-color: rgb(0, 21, 221);
+} */
+
+.home{
+    height: 100vh;
+        color: white;
+        font-size: 32px;
+        font-weight: bold;
+        position: relative;
+        
+}
+.home .first-tag{
+    white-space: nowrap;
+    margin-top: 40px;
+}
+
+
+.home .p {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0.3em;
+    right: 0;
+    opacity: 0;
+}
+
+#iam{
+    width:10%; 
+    height: auto;
+}
+
+#iam path:first-child{
+stroke-dasharray: 168;
+animation: 0.5s iam 2s linear;
+
+}
+
+@keyframes iam {
+    from{
+        stroke-dashoffset: 168;
+    }
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+#iam path:nth-child(2){
+stroke-dasharray: 118;
+animation: 0.5s iam1 2.5s linear forwards;
+opacity: 0;
+}
+
+@keyframes iam1 {
+    from{
+        stroke-dashoffset: 118;
+    }
+    to{
+        opacity: 1;
+        stroke-dashoffset: 0;
+    }
+}
+#iam path:nth-child(3){
+stroke-dasharray: 126;
+animation: 0.5s iam2 3s linear forwards;
+opacity: 0;
+}
+
+@keyframes iam2 {
+    from{
+        stroke-dashoffset: 126;
+    }
+    to{
+        opacity: 1;
+        stroke-dashoffset: 0;
+    }
+}
+#iam path:nth-child(4){
+stroke-dasharray: 126;
+animation:0.5s iam3 3.5s linear forwards;
+opacity: 0;
+}
+
+@keyframes iam3 {
+    from{
+        stroke-dashoffset: 49;
+    }
+    to{
+        opacity: 1;
+        stroke-dashoffset: 0;
+    }
+}
+#iam path:last-child{
+stroke-dasharray: 277;
+animation: 0.5s iam4 4s linear forwards;
+opacity: 0;
+}
+
+@keyframes iam4 {
+    from{
+        stroke-dashoffset: 277;
+    }
+    to{
+        opacity: 1;
+        stroke-dashoffset: 0;
+    }
+}
+
+
+#khalid {
+    width:70%;
+     height: auto;
+     fill: none;
+     stroke: #fff;
+     stroke-width: 2;
+     stroke-miterlimit: 10;
+    align-self: center;
+    margin-top: -80px;
+    position: relative;
+    z-index: 2000;
+}
+#khalid:hover path:nth-child(odd) {
+    transform: translateY(17px);
+    
+}
+#khalid:hover path:nth-child(even) {
+    transform: translateY(-17px);
+}
+
+#khalid path{
+    transition-duration: 1s;
+    fill: #fff;
+    stroke: #fff;
+    opacity:0;
+    stroke-dasharray:736 ;
+    animation: csvg 3s 1.75s cubic-bezier(0,0.23,1,.1) forwards;
+    
+}
+@keyframes csvg {
+    0%{
+        opacity: 0;
+        fill: none;
+        stroke-dasharray: 730;
+    }
+    30%{
+        opacity: 0;
+        fill: none;
+        stroke-dasharray:500 ;
+    }
+    80%{
+        fill:rgba(255, 255, 255, 0);
+    }
+   100%{
+        fill: rgba(255, 255, 255,1);
+    opacity: 10;
+        stroke-dasharray: 0;
+    }
+}
+
+@media (max-width:1200px) {
+    .home {
+            
+            font-size: 57px;
+        }
+}
+@media (max-width:992px) {
+    .home {
+            
+            font-size: 50px;
+        }
+        .home .last-tag{
+            font-size: 32px;
+        }
+}
+@media (max-width:768px) {
+    .home {
+            
+            font-size: 40px;
+        }
+                .home .last-tag {
+                    font-size: 23px;
+                }
+                
+}
+@media (max-width:600px) {
+    .home {
+            
+            font-size: 25px;
+        }
+                .home .last-tag {
+                    font-size: 18px;
+                }
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,142 @@
+.logo-nav{
+    padding: 30px 35px;
+    color: white;
+z-index: 40000;
+}
+.logo-nav h3{
+text-transform: uppercase;
+font-weight: bold;
+}
+
+
+
+.logo-nav .side-nav{
+    height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: -moz-fit-content;
+        align-items: center;
+        right: -30px;
+width: 16%;
+padding-bottom: 20px;
+
+
+}
+.logo-nav .media{
+    width: 30%;
+}
+.logo-nav .nav{
+    height: 100%;
+    width: 100%;
+}
+.logo-nav .side-nav p{
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 25px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.responsive-menu{
+    display: none;
+}
+.close-button{
+    display: none;
+}
+@media (min-width:992px) {
+.logo-nav .side-nav{
+    display: none;
+}
+
+
+
+}
+
+
+
+@media (max-width:992px) {
+.close-button {
+position: absolute;
+display: block;
+cursor: pointer;
+    top: 15px;
+    left: 15px;
+    width: 17px;
+    fill: rgb(0, 21, 221);
+    stroke-width: 15px;
+    
+}
+.logo-nav .side-nav {
+    transform: translateX(-15px) rotate(268deg);
+        background-color: white;
+        color: rgb(0, 21, 221);
+        height: 50%;
+        width: 40%;
+        padding-top: 10px;
+        border-radius: 10px;
+        top: 0;
+        transform-origin: top left;
+        transition-duration: 1s;
+        transition-timing-function:ease-in-out;
+        transition-property: transform rotate;
+        position: relative;
+        z-index: 2000;
+}
+.logo-nav .side-nav.slide {
+    transform:  rotate(0);
+}
+
+
+    
+        .responsive-menu {
+            display: block;
+            right: 20px;
+            cursor: pointer;
+        }
+        .responsive-menu .dots {
+width: 7px;
+fill: white;
+stroke: white;
+    stroke-width: 25px;
+    
+        }
+        .logo-nav .media  {
+            width: 30%;
+        }
+        .logo-nav .media p {
+            margin-left: 15px !important;
+        }
+        .logo-nav .nav{
+            padding: 0 20px;
+        }
+}
+@media (max-width:450px) {
+    .logo-nav .side-nav {
+            transform: translateX(-20px) rotate(268deg);
+            background-color: white;
+            color: rgb(0, 21, 221);
+            height: 50%;
+            width: 50%;
+            padding-top: 10px;
+            border-radius: 10px;
+            top: 0;
+            transform-origin: top left;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+            transition-property: transform ;
+        }
+    
+        .logo-nav .side-nav.slide {
+            transform: rotate(0);
+            right: -7px;
+        }
+        .logo-nav .media  {
+            width: fit-content;
+        }
+        .logo-nav .media p {
+            margin-left: 15px !important;
+        }
+        .logo-nav .nav{
+            padding: 0 ;
+        }
+}

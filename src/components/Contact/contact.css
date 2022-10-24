@@ -1,0 +1,28 @@
+.contact{
+padding: 100px 0;
+text-align: center;
+}
+
+.contact h1{
+font-size: 35px;
+font-weight: bolder;
+margin: 20px 0;
+text-transform: capitalize;
+font-family: system-ui;
+}
+.contact button{
+    margin-top: 20px;
+padding: 15px 25px;
+text-align: center;
+color: white;
+background-color: black;
+    transform: skewY(-6deg);
+    transition: transform 0.5s ;
+    letter-spacing: 1.5px;
+    text-transform: capitalize;
+}
+.contact button:hover{
+
+    transform: skewY(0);
+}
+
